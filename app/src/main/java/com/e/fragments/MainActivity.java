@@ -10,7 +10,7 @@ import android.widget.Button;
 import Fragments.FirstFragment;
 import Fragments.SecondFragment;
 
-public abstract class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button BtnFragment;
     private Boolean status=true;
     @Override
@@ -22,7 +22,7 @@ public abstract class MainActivity extends AppCompatActivity implements View.OnC
         BtnFragment.setOnClickListener(this);
 
     }
-    @Override
+
     public void onClick(View v){
         FragmentManager fragmentManager=getSupportFragmentManager();
         FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
